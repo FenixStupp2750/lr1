@@ -61,7 +61,7 @@ void Keeper::PushEl() {
 		L->Push(val, index);
 		break;
 	case 2:
-		std::cout << "0 - push back, 1 - push front";
+		std::cout << "0 - push back, 1 - push front: ";
 		std::cin >> index;
 		D->Push(val, index);
 		break;
@@ -82,14 +82,17 @@ void Keeper::PopEl() {
 		std::cout << "Enter index: ";
 		std::cin >> index;
 		std::cout << L->Pop(index);
+		std::cout << std::endl;
 		break;
 	case 2:
-		std::cout << "0 - pop back, 1 - pop front";
+		std::cout << "0 - pop back, 1 - pop front: ";
 		std::cin >> index;
 		std::cout << D->Pop(index);
+		std::cout << std::endl;
 		break;
 	case 3:
 		std::cout << S->Pop();
+		std::cout << std::endl;
 		break;
 	}
 }
